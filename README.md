@@ -7,7 +7,7 @@ lang: en-US
 author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
 keywords: ["programs", "c", "maerct", "linux", "keyboard"]
 x-masysma-version: 1.1.0
-x-masysma-repository: https://www.github.com/m7a/lo-ma-capsblinker
+x-masysma-repository: https://www.github.com/m7a/lp-maerct
 x-masysma-owned: 1
 x-masysma-copyright: |
   Copyright (c) 2020 Ma_Sys.ma.
