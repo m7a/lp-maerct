@@ -1,0 +1,51 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          masysma-emergency-remote-control
+# Required-Start:    $syslog $remote_fs
+# Required-Stop:     $syslog $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Ma_Sys.ma Emergency Remote Control via separate Keyboard
+# Description:       See package description
+### END INIT INFO
+# Author: Linux-Fan <Ma_Sys.ma@web.de>
+
+# derived from /etc/init.d/atd
+
+NAME_LONG="Ma_Sys.ma Emergency Remote Control"
+NAME_SHORT=maerct
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
+DAEMON="/usr/sbin/$NAME_SHORT"
+PIDFILE="/var/run/${NAME_SHORT}.pid"
+
+MAERCT_DEV=
+[ ! -f /etc/default/maerct ] || . /etc/default/maerct
+
+. /lib/lsb/init-functions
+
+case "$1" in
+start)
+	if [ -e "$MAERCT_DEV" ]; then
+		log_daemon_msg "Starting $NAME_LONG" "$NAME_SHORT"
+		start_daemon -p "$PIDFILE" "$DAEMON" -f "$MAERCT_DEV"
+	else
+		log_daemon_msg "$NAME_LONG not configured => not starting" \
+								"$NAME_SHORT"
+	fi
+	log_end_msg $?;;
+stop)
+	log_daemon_msg "Stopping $NAME_LONG" "$NAME_SHORT"
+	killproc -p "$PIDFILE" "$DAEMON"
+	log_end_msg $?;;
+force-reload|restart)
+	"$0" stop
+	"$0" start;;
+status)
+	status_of_proc -p $PIDFILE $DAEMON "$NAME_SHORT"
+	exit $?;;
+*)
+	echo "Usage: /etc/init.d/$NAME_SHORT {start|stop|restart|force-reload|status}"
+	exit 1;;
+esac
+
+exit 0

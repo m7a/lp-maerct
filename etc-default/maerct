@@ -1,0 +1,8 @@
+# MAERCT default configuration. Change if wanted. Empty means disabled
+# for example /dev/input/event0 (need to be keyboard)
+
+if [ "$(cat /etc/hostname)" = masysma-3 ]; then
+	MAERCT_DEV=/dev/input/event0
+else
+	MAERCT_DEV=
+fi

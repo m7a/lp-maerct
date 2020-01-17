@@ -1,0 +1,3 @@
+#!/bin/sh -e
+
+update-rc.d masysma-emergency-remote-control defaults

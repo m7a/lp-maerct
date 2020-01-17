@@ -1,0 +1,104 @@
+mdvl-maerct (1.1.0) stable; urgency=medium
+
+  * Package created with MDPC 2
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Fri, 17 Jan 2020 15:09:13 +0100
+
+mdvl-maerct (1.0.15) stable; urgency=medium
+
+  * Rename input device to support Debian Stretch
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Sat, 15 Jul 2017 15:18:54 +0200
+
+mdvl-maerct (1.0.14) stable; urgency=medium
+
+  * 4th attempt to fix memory usage report (now using KiB)
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Mon, 06 Mar 2017 18:33:35 +0100
+
+mdvl-maerct (1.0.13) stable; urgency=medium
+
+  * 3rd attempt to fix memory usage report (now taking cached memory into
+    account)
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Mon, 06 Mar 2017 18:25:16 +0100
+
+mdvl-maerct (1.0.12) stable; urgency=medium
+
+  * 2nd attempt to fix memory usage report (now taking buffers into account)
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Mon, 06 Mar 2017 15:07:22 +0100
+
+mdvl-maerct (1.0.11) stable; urgency=medium
+
+  * Fix high memory usage report to start warning at 95% instead of 120MiB
+    which were rarely reached
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Sat, 04 Mar 2017 23:36:25 +0100
+
+mdvl-maerct (1.0.10) stable; urgency=medium
+
+  * Program consistency restored
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 23:23:12 +0200
+
+mdvl-maerct (1.0.9) stable; urgency=medium
+
+  * Syntax errors corrected
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 23:22:21 +0200
+
+mdvl-maerct (1.0.8) stable; urgency=medium
+
+  * Implemented double forking to prevent process from hanging
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 23:21:36 +0200
+
+mdvl-maerct (1.0.7) stable; urgency=medium
+
+  * Second attempt to make the service start again
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 23:02:45 +0200
+
+mdvl-maerct (1.0.6) stable; urgency=medium
+
+  * Fix bug which prevented the service from starting
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 23:00:55 +0200
+
+mdvl-maerct (1.0.5) stable; urgency=medium
+
+  * Make init script perform better process control
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 22:57:33 +0200
+
+mdvl-maerct (1.0.4) stable; urgency=medium
+
+  * Trying to make updating work correctly
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 02:31:11 +0200
+
+mdvl-maerct (1.0.3) stable; urgency=medium
+
+  * Attempt to compile more efficiently
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 02:29:22 +0200
+
+mdvl-maerct (1.0.2) stable; urgency=medium
+
+  * Attempt to make sure only one version in archive.
+  * Configured for Ma_Sys.ma 3 by default.
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 02:18:52 +0200
+
+mdvl-maerct (1.0.1) stable; urgency=medium
+
+  * Attemt to fix lintian warnings
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 02:18:09 +0200
+
+mdvl-maerct (1.0.0) stable; urgency=medium
+
+  * mdvl-maerct first debian package version
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Wed, 24 Jun 2015 02:00:45 +0200
