@@ -8,6 +8,7 @@ author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
 keywords: ["programs", "c", "maerct", "linux", "keyboard"]
 x-masysma-version: 1.1.0
 x-masysma-repository: https://www.github.com/m7a/lp-maerct
+x-masysma-website: https://masysma.lima-city.de/11/maerct.xhtml
 x-masysma-owned: 1
 x-masysma-copyright: |
   Copyright (c) 2020 Ma_Sys.ma.
