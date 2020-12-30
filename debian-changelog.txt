@@ -1,3 +1,9 @@
+mdvl-maerct (1.1.1) stable; urgency=medium
+
+  * Add trigger for armhf build.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Thu, 31 Dec 2020 00:40:56 +0100
+
 mdvl-maerct (1.1.0) stable; urgency=medium
 
   * Package created with MDPC 2

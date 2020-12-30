@@ -61,7 +61,7 @@ used machine with a second keyboard connected for the sole purpose of being
 used by this program (e. g. one can install otherwise unused PS2 keyboards for
 the purpose).
 
-It then outputs a limited amount of status niformation in form of regular blink
+It then outputs a limited amount of status information in form of regular blink
 codes using the three keyboard LEDs: NumLock, CapsLock and ScrollLock.
 
 Apart from displaying status, it can serve as a remote control (thus the name)
