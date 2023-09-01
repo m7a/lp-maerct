@@ -24,19 +24,7 @@ masysma-emergency-remote-control /etc/init.d
 </property>
 
 <!-- CI INTEGRATION -->
-<target name="package_triggered" depends="package">
-	<property name="masysma.ci.trigger" value="newver"/>
-</target>
-<target name="package_triggered_i386" depends="package">
-	<property name="masysma.ci.trigger"     value="newver"/>
-	<property name="masysma.ci.runenv"      value="ssh"/>
-	<property name="masysma.ci.runenv.name" value="i386"/>
-</target>
-<target name="package_triggered_armhf" depends="package">
-	<property name="masysma.ci.trigger"     value="newver"/>
-	<property name="masysma.ci.runenv"      value="ssh"/>
-	<property name="masysma.ci.runenv.name" value="armhf"/>
-</target>
+<target name="autoci" depends="autopackage"/>
 
 <!-- CONSTANT TPL IMPORT -->
 <property environment="env"/>
